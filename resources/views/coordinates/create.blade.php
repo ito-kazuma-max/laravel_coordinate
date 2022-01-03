@@ -38,7 +38,7 @@
                                 <div class="item_link d-flex align-items-center justify-content-center border mt-2 mb-2">
                                     <label>
                                         <input type="radio" name="tops_id" value="{{ $tops_item->id }}">
-                                        <img class="item_image" src="{{ \Storage::url($tops_item->image) }}">
+                                        <img class="item_image img-fluid" src="{{ \Storage::url($tops_item->image) }}">
                                     </label>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                                 <div class="item_link d-flex align-items-center justify-content-center border mt-2 mb-2">
                                     <label>
                                         <input type="radio" name="bottoms_id" value="{{ $bottoms_item->id }}">
-                                        <img class="item_image" src="{{ \Storage::url($bottoms_item->image) }}">
+                                        <img class="item_image img-fluid" src="{{ \Storage::url($bottoms_item->image) }}">
                                     </label>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
                                 <div class="item_link d-flex align-items-center justify-content-center border mt-2 mb-2">
                                     <label>
                                         <input type="radio" name="shoes_id" value="{{ $shoes_item->id }}">
-                                        <img class="item_image" src="{{ \Storage::url($shoes_item->image) }}">
+                                        <img class="item_image img-fluid" src="{{ \Storage::url($shoes_item->image) }}">
                                     </label>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@
                                 <div class="item_link d-flex align-items-center justify-content-center border mt-2 mb-2">
                                     <label>
                                         <input type="radio" name="outer_id" value="{{ $outer_item->id }}">
-                                        <img class="item_image" src="{{ \Storage::url($outer_item->image) }}">
+                                        <img class="item_image img-fluid" src="{{ \Storage::url($outer_item->image) }}">
                                     </label>
                                 </div>
                             </div>
@@ -162,7 +162,7 @@
                                 <div class="item_link d-flex align-items-center justify-content-center border mt-2 mb-2">
                                     <label>
                                         <input type="radio" name="bag_id" value="{{ $bag_item->id }}">
-                                        <img class="item_image" src="{{ \Storage::url($bag_item->image) }}">
+                                        <img class="item_image img-fluid" src="{{ \Storage::url($bag_item->image) }}">
                                     </label>
                                 </div>
                             </div>
