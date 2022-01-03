@@ -60,6 +60,10 @@ textarea {
     max-width: 95%;
 }
 
+.img-fluid-a {
+    width: 50%;
+}
+
 .coorde_image_box {
     padding-top: 100%;
     width: 100%;
@@ -86,3 +90,4 @@ textarea {
 .item_title {
     font-size: 24px;
 }
+
