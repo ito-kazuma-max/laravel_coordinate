@@ -61,7 +61,7 @@ textarea {
 }
 
 .img-fluid-a {
-    width: 30%;
+    max-width: 100%;
 }
 
 .coorde_image_box {
