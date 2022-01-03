@@ -1,13 +1,8 @@
 <?php
 
-if(config('app.env') === 'production'){
-    URL::forceScheme('https');
-}
 
 Route::get('/', function () {
-    return view('top', [
-        'title' => 'トップページ',
-    ]);
+    return view('top');
 })->name('top');
 
 Auth::routes();
