@@ -1,0 +1,76 @@
+body {
+    padding-top: 70px;
+}
+
+.navbar {
+    white-space: nowrap;
+}
+
+.user-name {
+    margin: 8px;
+}
+
+input {
+    font-size: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.delete {
+    display: inline;
+}
+
+.submit_button {
+    cursor: pointer;
+}
+
+textarea {
+    display: block;
+    width: 240px;
+    height: 160px;
+}
+
+.item_link {
+    display: block;
+    height: 200px;
+}
+
+.item_image {
+    height: auto;
+    width: auto;
+    max-height: 95%;
+    max-width: 95%;
+}
+
+.coorde_image_box {
+    padding-top: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.coorde_image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.coorde_item_name {
+    height: 48px;
+}
+
+.item {
+    width: 95%;
+}
+
+.item_title {
+    font-size: 24px;
+}
