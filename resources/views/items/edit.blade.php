@@ -5,7 +5,7 @@
 @section('content')
 <h1>{{ $title }}</h1>
 
-<form method="POST" action="{{ route('items.update', $item) }}" enctype="multipart/form-data">
+<form method="POST" action="{{ route('items.update', $item) }}">
     @csrf
     @method('PATCH')
     <div>

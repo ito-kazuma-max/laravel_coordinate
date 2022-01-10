@@ -60,11 +60,11 @@ textarea {
     max-width: 95%;
 }
 
-.img-fluid-a {
+.coorde_item_image {
     height: auto;
     width: auto;
     max-height: 95%;
-    max-width: 95%;
+    max-width: 90%;
 }
 
 .coorde_image_box {

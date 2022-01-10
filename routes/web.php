@@ -22,13 +22,13 @@ Route::post('/items', 'ItemController@store')
 Route::get('/items/{item}/edit', 'ItemController@edit')
     ->name('items.edit');
 
-Route::patch('/items/{item}', 'ItemController@update')
+Route::patch('/items/{item}/update', 'ItemController@update')
     ->name('items.update');
 
 Route::get('/items/{item}/edit_image', 'ItemController@edit_image')
     ->name('items.edit_image');
 
-Route::patch('/items/{item}', 'ItemController@update_image')
+Route::patch('/items/{item}/update_image', 'ItemController@update_image')
     ->name('items.update_image');
 
 Route::delete('/items/{item}', 'ItemController@destroy')
