@@ -127,7 +127,7 @@
                         <div class="item_body ml-2 mr-2">
                             <div class="item_body_img">
                                 <div class="item_link d-flex align-items-center justify-content-center border mt-2 mb-2">
-                                    <label>
+                                    <label class="coorde_label">
                                         <input type="radio" name="outer_id" value="{{ $outer_item->id }}">
                                         <img class="coorde_item_image" src="{{ \Storage::url($outer_item->image) }}">
                                     </label>
