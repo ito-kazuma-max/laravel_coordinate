@@ -3,7 +3,7 @@
 @section('title', $title)
 
 @section('content')
-<h1>{{ $title }}</h1>
+<h1 class="mb-3">{{ $title }}</h1>
 <a href="{{ route('items.create') }}" class="btn btn-success mb-3">新規アイテム登録</a>
 <a href="{{ route('coordinates.create', \Auth::user()) }}" class="btn btn-primary mb-3 ml-3">新規コーデ登録</a>
 

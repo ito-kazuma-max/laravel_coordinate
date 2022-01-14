@@ -32,9 +32,14 @@ class CoordinateController extends Controller
     public function create(User $user, ItemsArrayService $service)
     {
         $items = $service->getArray(Item::where('user_id', '=', $user->id)->get());
+        if ($user->id === \Auth::id()) {
+            $title = '新規コーデ登録';
+        } else {
+            $title = '新規コーデ提案';
+        }
 
         return view('coordinates.create', [
-            'title' => '新規コーデ登録',
+            'title' => $title,
             'user' => $user,
             'items' => $items,
         ]);
