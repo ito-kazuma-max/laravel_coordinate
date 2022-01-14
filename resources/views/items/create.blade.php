@@ -5,21 +5,21 @@
 @section('content')
 <h1>{{ $title }}</h1>
 
-<form method="POST" action="{{ route('items.store') }}" enctype="multipart/form-data">
+<form class="mt-5" method="POST" action="{{ route('items.store') }}" enctype="multipart/form-data">
     @csrf
     <div>
         <label>
           アイテム名:
-          <input type="text" name="name" value="{{ old('name') }}">
+          <input class="input_form" type="text" name="name" value="{{ old('name') }}">
         </label>
     </div>
-    <div>
+    <div class="mt-2">
         <label>
           アイテム説明:
           <textarea name="description">{{ old('description') }}</textarea>
         </label>
     </div>
-    <div>
+    <div class="mt-2">
         <label>
           カテゴリー:
           <select name="category_id">
@@ -34,14 +34,13 @@
           </select>
         </label>
     </div>
-    <div>
+    <div class="mt-2">
         <label>
           画像を選択:
-          <input type="file" name="image">
+          <input class="input_form" type="file" name="image">
         </label>
     </div>
-
-    <input type="submit" value="登録">
+    <input class="input_form mt-2" type="submit" value="登録">
 </form>
 
 @endsection

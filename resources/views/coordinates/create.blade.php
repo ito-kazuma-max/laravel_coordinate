@@ -5,23 +5,23 @@
 @section('content')
 <h1>{{ $title }}</h1>
 
-<form method="POST" action="{{ route('coordinates.store', $user) }}">
+<form class="mt-5" method="POST" action="{{ route('coordinates.store', $user) }}">
     @csrf
     <div>
         <label>
             タイトル:
-            <input type="text" name="title" value="{{ old('name') }}">
+            <input class="input_form" type="text" name="title" value="{{ old('name') }}">
         </label>
     </div>
     @guest
-        <div>
+        <div class="mt-2">
             <label>
                 名前:
-                <input type="text" name="madeUser_name" value="{{ old('name') }}">
+                <input class="input_form" type="text" name="madeUser_name" value="{{ old('name') }}">
             </label>
         </div>
     @endguest
-    <div>
+    <div class="mt-2">
         <label>
             概要:
             <textarea name="description">{{ old('description') }}</textarea>

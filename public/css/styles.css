@@ -26,6 +26,10 @@ input {
     font-size: 10px;
 }
 
+.input_form {
+    font-size: 14px;
+}
+
 .error {
     color: red;
 }
