@@ -43,7 +43,7 @@ class ItemController extends Controller
         if($path) {
             Item::create([
                 'user_id' => \Auth::id(),
-                'name' => $request->name,
+                'name' => $request->item_name,
                 'description' => $request->description,
                 'category_id' => $request->category_id,
                 'image' => $path,
@@ -68,7 +68,7 @@ class ItemController extends Controller
     public function update(ItemEditRequest $request, Item $item)
     {
         $item->update([
-            'name' => $request->name,
+            'name' => $request->item_name,
             'description' => $request->description,
             'category_id' => $request->category_id,
         ]);

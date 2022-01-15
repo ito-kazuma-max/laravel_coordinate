@@ -5,22 +5,22 @@
 @section('content')
 <h1>{{ $title }}</h1>
 
-<form method="POST" action="{{ route('items.update', $item) }}">
+<form class="mt-4" method="POST" action="{{ route('items.update', $item) }}">
     @csrf
     @method('PATCH')
     <div>
         <label>
           アイテム名:
-          <input type="text" name="name" value="{{ old('name', $item->name) }}">
+          <input class="input_form" type="text" name="item_name" value="{{ old('item_name', $item->name) }}">
         </label>
     </div>
-    <div>
+    <div class="mt-2">
         <label>
           アイテム説明:
           <textarea name="description">{{ old('description', $item->description) }}</textarea>
         </label>
     </div>
-    <div>
+    <div class="mt-2">
         <label>
           カテゴリー:
           <select name="category_id">
@@ -35,7 +35,7 @@
           </select>
         </label>
     </div>
-    <input type="submit" value="登録">
+    <input class="input_form mt-3 btn btn-secondary" type="submit" value="登録">
 </form>
 
 @endsection

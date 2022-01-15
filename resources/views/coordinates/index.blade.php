@@ -12,7 +12,7 @@
     @endif
 </a>
 
-<section class="mt-4">
+<section class="mt-5">
 <h2>登録コーデ</h2>
 <ul class="list-unstyled mt-4">
     @forelse($my_coordinates as $coordinate)

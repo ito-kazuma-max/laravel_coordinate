@@ -10,7 +10,7 @@
     <div>
         <label>
           アイテム名:
-          <input class="input_form" type="text" name="name" value="{{ old('name') }}">
+          <input class="input_form" type="text" name="item_name" value="{{ old('item_name') }}">
         </label>
     </div>
     <div class="mt-2">
@@ -40,7 +40,7 @@
           <input class="input_form" type="file" name="image">
         </label>
     </div>
-    <input class="input_form mt-2" type="submit" value="登録">
+    <input class="input_form mt-2 btn btn-secondary" type="submit" value="登録">
 </form>
 
 @endsection

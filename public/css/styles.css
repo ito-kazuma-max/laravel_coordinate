@@ -64,6 +64,10 @@ textarea {
     max-width: 95%;
 }
 
+.edit_link {
+    font-size: 16px;
+}
+
 .coorde_item_image {
     height: auto;
     width: auto;

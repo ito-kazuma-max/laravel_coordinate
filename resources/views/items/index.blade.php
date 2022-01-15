@@ -5,10 +5,10 @@
 @section('content')
 <h1 class="mb-3">{{ $title }}</h1>
 <a href="{{ route('items.create') }}" class="btn btn-success mb-3">新規アイテム登録</a>
-<a href="{{ route('coordinates.create', \Auth::user()) }}" class="btn btn-primary mb-3 ml-3">新規コーデ登録</a>
+<a href="{{ route('coordinates.create', \Auth::user()) }}" class="btn btn-primary ml-3 mb-3">新規コーデ登録</a>
 
 @foreach($items as $key => $category_items)
-<h2 class="mt-4">{{ $key }}</h2>
+<h2 class="mt-5">{{ $key }}</h2>
 <ul class="items row list-unstyled mb-5">
     @forelse($category_items as $item)
         <li class="col-lg-4 col-sm-6 col-12 mt-3 mb-2">
@@ -26,12 +26,12 @@
                         アイテム詳細: {{ $item->description }}
                     </div>
                     <div class="mb-1">
-                        <a href="{{ route('items.edit', $item) }}">[編集]</a>
-                        <a href="{{ route('items.edit_image', $item) }}">[画像を変更]</a>
+                        <a class="edit_link" href="{{ route('items.edit', $item) }}">[編集]</a>
+                        <a class="edit_link ml-2" href="{{ route('items.edit_image', $item) }}">[画像を変更]</a>
                         <form action="{{ route('items.destroy', $item) }}" method="post">
                             @csrf
                             @method('DELETE')
-                            <input type="submit" value="削除">
+                            <input class="input_form btn btn-secondary mt-1 mb-1" type="submit" value="削除">
                         </form>
                     </div>
                 </div>

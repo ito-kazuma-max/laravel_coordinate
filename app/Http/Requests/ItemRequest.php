@@ -24,7 +24,7 @@ class ItemRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'max:15'],
+            'item_name' => ['required', 'max:15'],
             'category_id' => ['required', 'exists:categories,id'],
             'description' => ['max:100'],
             'image' => [
