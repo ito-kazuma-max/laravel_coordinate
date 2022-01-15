@@ -10,14 +10,14 @@
     <div>
         <label>
             タイトル:
-            <input class="input_form" type="text" name="title" value="{{ old('name') }}">
+            <input class="input_form" type="text" name="title" value="{{ old('title') }}">
         </label>
     </div>
     @guest
         <div class="mt-2">
             <label>
                 名前:
-                <input class="input_form" type="text" name="madeUser_name" value="{{ old('name') }}">
+                <input class="input_form" type="text" name="madeUser_name" value="{{ old('madeUser_name') }}">
             </label>
         </div>
     @endguest

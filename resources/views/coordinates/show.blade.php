@@ -3,10 +3,10 @@
 @section('title', $title)
 
 @section('content')
-<h1>{{ $title }}</h1>
-<a href="{{ route('coordinates.index', $coordinate->user) }}" class="btn btn-secondary mb-3">一覧に戻る</a>
+<h1 class="mb-3">{{ $title }}</h1>
+<a href="{{ route('coordinates.index', $coordinate->user) }}" class="btn btn-secondary">一覧に戻る</a>
 
-<ul class="items row list-unstyled mb-5">
+<ul class="items row list-unstyled mt-4 mb-5">
     <li class="col-lg-4 col-sm-6 col-12 mt-3 mb-2">
         <h2 class="mt-4">Tops</h2>
         <div class="item card border-secondary">

@@ -3,22 +3,22 @@
 @section('content')
   <h1>ログイン</h1>
 
-  <form method="POST" action="{{ route('login') }}">
+  <form class="mt-4" method="POST" action="{{ route('login') }}">
       @csrf
       <div>
           <label>
             メールアドレス:
-            <input type="email" name="email">
+            <input class="input_form" type="email" name="email">
           </label>
       </div>
 
-      <div>
+      <div class="mt-2">
           <label>
             パスワード:
-            <input type="password" name="password" >
+            <input class="input_form" type="password" name="password" >
           </label>
       </div>
 
-      <input type="submit" value="ログイン">
+      <input class="input_form mt-3 btn btn-secondary" type="submit" value="ログイン">
   </form>
 @endsection
