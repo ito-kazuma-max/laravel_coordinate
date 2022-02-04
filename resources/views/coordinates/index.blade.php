@@ -112,7 +112,7 @@
                 <form  class="ml-3" action="{{ route('coordinates.destroy', [$user, $coordinate]) }}" method="post">
                     @csrf
                     @method('DELETE')
-                    <button class="btn btn-secondary">削除</button>
+                    <button class="btn btn-secondary delete">削除</button>
                 </form>
                 @endif
             </div>
@@ -229,7 +229,7 @@
             <form  class="ml-3" action="{{ route('coordinates.destroy', [$user, $coordinate]) }}" method="post">
                 @csrf
                 @method('DELETE')
-                <button class="btn btn-secondary">削除</button>
+                <button class="btn btn-secondary delete">削除</button>
             </form>
             @endif
         </div>

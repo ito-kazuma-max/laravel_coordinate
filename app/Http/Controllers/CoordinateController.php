@@ -67,6 +67,11 @@ class CoordinateController extends Controller
             'description' => $request->description,
         ]);
 
+        if ($user->id === \Auth::id()) {
+            session()->flash('success', 'コーディネートを登録しました');
+        } else {
+            session()->flash('success', 'コーディネートを提案しました');
+        }
         return redirect()->route('coordinates.index', $user);
     }
 
@@ -82,6 +87,7 @@ class CoordinateController extends Controller
     {
         $coordinate->delete();
 
+        session()->flash('success', 'コーディネートを削除しました');
         return redirect()->route('coordinates.index', $user);
     }
 
