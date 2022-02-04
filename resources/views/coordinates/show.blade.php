@@ -4,9 +4,15 @@
 
 @section('content')
 <h1 class="mb-3">{{ $title }}</h1>
-<a href="{{ route('coordinates.index', $coordinate->user) }}" class="btn btn-secondary">一覧に戻る</a>
+<a href="{{ route('coordinates.index', $coordinate->user) }}" class="btn btn-secondary mb-5">一覧に戻る</a>
 
-<ul class="items row list-unstyled mt-4 mb-5">
+
+@if($coordinate->user_id !== $coordinate->madeUser_id)
+    <p class="show_description">提案者：{{ $coordinate->madeUser_name }}</p>
+@endif
+<p class="show_description">コーデ概要：{{ $coordinate->description }}</p>
+
+<ul class="items row list-unstyled mb-5">
     <li class="col-lg-4 col-sm-6 col-12 mt-3 mb-2">
         <h2 class="mt-4">Tops</h2>
         <div class="item card border-secondary">

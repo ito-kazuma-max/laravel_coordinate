@@ -182,10 +182,6 @@
                         </span>
                     </div>
                 </div>
-
-
-
-
             </div>
             <div class="item col-4 col-lg-2 offset-2 offset-lg-0 mb-2">
                 <div class="card">
@@ -224,14 +220,16 @@
             </div>
         </div>
         <div class="d-flex mb-2">
-            <a href="" class="btn btn-warning ml-3">詳細を見る</a>
-            @if(\Auth::id() === $user->id || \Auth::id() === $coordinate->madeUser_id)
-            <form  class="ml-3" action="{{ route('coordinates.destroy', [$user, $coordinate]) }}" method="post">
-                @csrf
-                @method('DELETE')
-                <button class="btn btn-secondary delete">削除</button>
-            </form>
-            @endif
+            <a href="{{ route('coordinates.show', $coordinate) }}" class="btn btn-warning ml-3">詳細を見る</a>
+            @auth
+                @if(\Auth::id() === $user->id || \Auth::id() === $coordinate->madeUser_id)
+                <form  class="ml-3" action="{{ route('coordinates.destroy', [$user, $coordinate]) }}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-secondary delete">削除</button>
+                </form>
+                @endif
+            @endauth
         </div>
     </li>
     @empty
