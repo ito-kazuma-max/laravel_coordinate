@@ -8,8 +8,8 @@
 <h1 class="text-center mt-5 title mb-5">Coorde for</h1>
 <div class="row">
     @guest
-        <a href="{{ route('register') }}" class="btn btn-success col-4 offset-1 mt-5">サインアップ</a>
-        <a href="{{ route('login') }}" class="btn btn-primary col-4 offset-2 mt-5">ログイン</a>
+        <a href="{{ route('register') }}" class="btn btn-success col-4 offset-1 mt-5 pt-3 pb-3">サインアップ</a>
+        <a href="{{ route('login') }}" class="btn btn-primary col-4 offset-2 mt-5 pt-3 pb-3">ログイン</a>
     @endguest
 </div>
 
