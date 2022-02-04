@@ -9,9 +9,9 @@
 
 <div class="row mt-4">
 
-    <a href="{{ route('items.create', $user) }}" class="btn btn-outline-dark col-4 offset-1 pt-5 pb-5 mb-5">新規アイテム<br>登録</a>
+    <a href="{{ route('items.create') }}" class="btn btn-outline-dark col-4 offset-1 pt-5 pb-5 mb-5">新規アイテム<br>登録</a>
 
-    <a href="{{ route('items.index', $user) }}" class="btn btn-secondary col-4 offset-1 pt-5 pb-5 mb-5">アイテム<br>一覧</a>
+    <a href="{{ route('items.index') }}" class="btn btn-secondary col-4 offset-1 pt-5 pb-5 mb-5">アイテム<br>一覧</a>
 
     <a href="{{ route('coordinates.create', $user) }}" class="btn btn-outline-primary col-4 offset-1 pt-5 pb-5 mb-5">新規コーデ<br>登録</a>
 
