@@ -18,7 +18,7 @@
     <a href="{{ route('coordinates.index', $user) }}" class="btn btn-info col-4 offset-1 pt-5 pb-5 mb-5">マイコーデ<br>一覧</a>
 
     <div class="col-12 text-center">
-        <div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://max-ito.com/users/{{ $user->id }}/user_page" data-color="default" data-size="large" data-count="false" data-ver="3" style="display: none;"></div>
+        <div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://max-ito.com/coorde-for/users/{{ $user->id }}/user_page" data-color="default" data-size="large" data-count="false" data-ver="3" style="display: none;"></div>
     </div>
 
 </div>
