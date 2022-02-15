@@ -1,78 +1,81 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## コンセプト
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+自分の持っているアイテムを管理しきれないことや、気に入ったコーディネートを覚えておきたいという経験から、それらが簡単に行えるアプリを作成しました。  
+また、コーディネートに悩んでいるときに、友達に相談したいことがあります。そのような場面で、自分のページをLINEで送ることで、簡単にコーディネートの提案を受けられるような機能を実装しました。
+ファッションが好きな人をはじめ、自分のファッションに自信が持てない人もターゲットにしております。  
+自分のためのコーデアプリでありながら、友達にコーデの提案をしてあげれるという点で、誰かのためになる、そんな想いを込めて『Coorde for』と名付けました。
+<br />
+<br />
+<br />
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## アプリURL
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+https://max-ito.com/coorde-for/
+<br />
+<br />
+<br />
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 使用技術
 
-## Learning Laravel
+- PHP 7.3.29
+- Laravel 6.20.41
+- HTML/CSS
+- JavaScript
+- Bootstrap 4
+- mysql 5.1
+- Docker
+- Laradock
+- ConoHa
+- Git,GitHub
+<br />
+<br />
+<br />
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## ER図
+![ER図](https://user-images.githubusercontent.com/99465120/154087944-1f51f4fd-803b-4076-aa85-0bdd56757e75.jpg)
+<br />
+<br />
+<br />
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## 機能一覧
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+- ユーザー登録及びログイン
+- アイテム関連
+    - アイテムの登録
+    - カテゴリーごとのアイテム一覧の確認
+    - アイテム画像の変更
+    - アイテムの編集
+    - アイテムの削除
+- コーディネート関連
+    - コーデの登録
+    - コーデ一覧の確認
+    - コーデ詳細の確認
+    - コーデの削除
+- 自分のページへのリンクをLINEで送信する
+- コーディネート提案関連
+    - コーデの提案(ログイン状況に関わらず)
+    - 提案コーデの削除(ログインユーザーに限る)
+<br />
+<br />
+<br />
 
-## Contributing
+## 工夫した点
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+コンセプトやターゲットを組み立てを時間をかけて丁寧に行ったため、自分が作りたかったものをしっかりと形にできました。  
+実際に使用される状況を強く意識し、必要な機能を過不足なくシンプルに実装しました。分かりやすく使いやすいアプリに仕上がったと思います。
+<br />
+<br />
+<br />
 
-## Code of Conduct
+## 発展性及びマネタイズの例
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**①SNS機能の強化→広告収入**
+カテゴリーによるコーディネートの検索や、特定のアイテムを使ったコーディネートの検索機能を追加することで、ユーザーが互いに参考にし合えるようになります。この時、検索内容により関連の広告を表示することで高いインプレッションを狙えます。  
+(例)キャンプコーデによる検索ページではキャンプ用品の広告を表示する。
+<br />
+<br />
+**②ショップによるコーデやアイテムの提案機能→ショップとの契約収入**
+ユーザーのアイテムやコーディネートを見ながら、ショップからおすすめのアイテムを提案することができるようにし、本提案ページから購入が可能とします。この時、アイテムの提案のためには契約料が必要とします。自分が欲しいものを買いに行くのがスタンダードですが、逆に提案してもらえるというスタイルは事業として可能性があると考えます。
