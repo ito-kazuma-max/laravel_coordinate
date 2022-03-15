@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
-<body>
+<body class="d-flex flex-column">
     <header>
         @guest
             <nav class="navbar navbar-expand-sm fixed-top bg-light navbar-light">
@@ -82,6 +82,9 @@
         @yield('content')
 
     </div>
+    <footer class="mt-auto text-center bg-dark texst-light">
+        ©︎KAZUMA ITO
+    </footer>
 <script src="{{ asset('/js/app.js') }}"></script>
 <script src="{{ asset('/js/js-app.js') }}"></script>
 </body>
