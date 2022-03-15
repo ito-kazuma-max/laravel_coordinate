@@ -82,7 +82,7 @@
         @yield('content')
 
     </div>
-    <footer class="mt-auto text-center bg-dark texst-light">
+    <footer class="mt-auto text-center bg-dark text-light">
         ©︎KAZUMA ITO
     </footer>
 <script src="{{ asset('/js/app.js') }}"></script>
