@@ -1,5 +1,6 @@
 body {
     padding-top: 70px;
+    min-height: 100vh;
 }
 
 .catch_copy {
