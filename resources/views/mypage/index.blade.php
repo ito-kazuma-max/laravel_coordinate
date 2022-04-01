@@ -30,8 +30,8 @@
             </div>
         </div>
     </div>
-    <div class="col-8 mt-5 text-center">
-        <p>コーディネートを提案してもらおう！
+    <div class="col-12 mt-5 text-center">
+        <p>友達からコーディネートを提案してもらおう！
     </div>
     <div class="col-6 mt-2 text-right">
         <div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://max-ito.com/coorde-for/users/{{ $user->id }}/user_page" data-color="default" data-size="large" data-count="false" data-ver="3" style="display: none;"></div>
