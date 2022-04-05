@@ -6,7 +6,6 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body class="d-flex flex-column">
     <header>
@@ -41,16 +40,19 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="{{ route('mypage.index') }}" class="nav-link">
+                                <i class="fas fa-address-card"></i>
                                 マイページ
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('items.index') }}" class="nav-link">
+                                <i class="fas fa-tshirt"></i>
                                 アイテム一覧
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('coordinates.index', \Auth::user()) }}" class="nav-link">
+                                <i class="fas fa-user-tie"></i>
                                 マイコーデ一覧
                             </a>
                         </li>
@@ -86,7 +88,8 @@
     <footer class="mt-auto text-center bg-dark text-light">
         ©︎KAZUMA ITO
     </footer>
-<script src="{{ asset('/js/app.js') }}"></script>
-<script src="{{ asset('/js/js-app.js') }}"></script>
+    <script src="https://kit.fontawesome.com/3638c68917.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('/js/app.js') }}"></script>
+    <script src="{{ asset('/js/js-app.js') }}"></script>
 </body>
 </html>
